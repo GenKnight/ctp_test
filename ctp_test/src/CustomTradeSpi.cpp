@@ -111,7 +111,7 @@ void CustomTradeSpi::OnRspSettlementInfoConfirm(
 		
         // 报单录入请求（这里是一部接口，此处是按顺序执行）
         if (loginFlag)
-            reqOrderInsert("m1709", 2845, 1, '0');
+            reqOrderInsert("m1709", 2845, 10, '0');
         // 请求查询合约
 		//reqQueryInstrument();
 	}
@@ -396,7 +396,7 @@ void CustomTradeSpi::reqOrderInsert(
 	///合约代码
 	strcpy(orderInsertReq.InstrumentID, instrumentID);
 	///报单引用
-	strcpy(orderInsertReq.OrderRef, order_ref);
+	strcpy(orderInsertReq.OrderRef, "10001");
 	///报单价格条件: 限价
 	orderInsertReq.OrderPriceType = THOST_FTDC_OPT_LimitPrice;
 	///买卖方向: 
