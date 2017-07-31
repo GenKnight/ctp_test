@@ -8,6 +8,7 @@ include/*
 ipch/*
 ctp_test/tr_con/*
 ctp_test/md_con/*
+ctp_test/market/*
 
  # Compiled source # 
 ################### 
